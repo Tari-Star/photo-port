@@ -15,6 +15,7 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  
   return (
     <div>
       <Nav  
@@ -24,7 +25,7 @@ function App() {
         ></Nav>
       <main>
         <div>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
         </div>
       </main>
